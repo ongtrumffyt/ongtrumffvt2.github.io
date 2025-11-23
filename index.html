@@ -5,93 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tri Ân Thầy Cô 20-11 ♡ Lớp Chúng Mình</title>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { 
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #ffeef8, #ffd1e9, #ffb6e0);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family:'Segoe UI',sans-serif;
+            background:linear-gradient(135deg,#ffeef8,#ffd1e9,#ffb6e0);
+            min-height:100vh;display:flex;align-items:center;justify-content:center;
         }
-        .envelope {
-            width: 340px; height: 230px;
-            background: #fff0f5;
-            border-radius: 28px;
-            box-shadow: 0 30px 70px rgba(0,0,0,0.35);
-            cursor: pointer;
-            position: relative;
-            transition: all 0.5s;
+        .envelope{
+            width:340px;height:230px;background:#fff0f5;border-radius:28px;
+            box-shadow:0 30px 70px rgba(0,0,0,.35);cursor:pointer;position:relative;
+            transition:all .5s;
         }
-        .envelope:hover { transform: scale(1.08); }
-        .envelope::before {
-            content: '❤️';
-            font-size: 110px;
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
+        .envelope:hover{transform:scale(1.08)}
+        .envelope::before{
+            content:'❤️';font-size:110px;position:absolute;
+            top:50%;left:50%;transform:translate(-50%,-50%)
         }
-        .letter {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.96);
-            z-index: 999;
-            display: none;
-            overflow-y: auto;
-            padding: 20px;
+        .letter{
+            position:fixed;top:0;left:0;right:0;bottom:0;
+            background:rgba(0,0,0,.96);z-index:999;display:none;
+            overflow-y:auto;padding:20px;
         }
-        .close {
-            position: fixed;
-            top: 20px; right: 30px;
-            font-size: 70px; color: #fff;
-            cursor: pointer; z-index: 1000;
+        .close{
+            position:fixed;top:20px;right:30px;font-size:70px;color:#fff;
+            cursor:pointer;z-index:1000;
         }
-        .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            color: #fff;
-            text-align: center;
-            padding-top: 80px;
+        .content{
+            max-width:1000px;margin:0 auto;color:#fff;text-align:center;
+            padding-top:80px;
         }
-        .content img {
-            max-width: 100%;
-            border-radius: 24px;
-            margin: 30px 0;
-            box-shadow: 0 20px 45px rgba(0,0,0,0.7);
-            border: 6px solid #fff;
-        }
-        h1 {
-            font-size: 56px;
-            margin-bottom: 40px;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Lá thư hồng giữa màn hình -->
-    <div class="envelope" onclick="document.getElementById('letter').style.display='block'"></div>
-
-    <!-- Nội dung thiệp -->
-    <div id="letter" class="letter">
-        <div class="close" onclick="this.parentNode.style.display='none'">×</div>
-        <div class="content">
-            <h1>🌸 Tri Ân Ngày Nhà Giáo Việt Nam 20/11 🌸</h1>
-            
-            <!-- 4 ảnh mới nhất (link catbox – sống mãi mãi) -->
-            <img src="https://files.catbox.moe/2y5q2r.jpg" alt="Ảnh lớp 1">
-            <img src="https://files.catbox.moe/9w2o6p.jpg" alt="Ảnh cổng trường">
-            <img src="https://files.catbox.moe/3v8r9k.jpg" alt="Ảnh họp lớp">
-            <img src="https://files.catbox.moe/7t1m5x.jpg" alt="Ảnh tặng hoa cô">
-
-            <br><br><br>
-            <p style="font-size:28px; line-height:2; background:rgba(255,255,255,0.2); padding:30px; border-radius:25px;">
-                Kính gửi thầy cô yêu quý,<br><br>
-                Cảm ơn thầy cô đã luôn tận tụy, dìu dắt chúng em suốt những năm tháng học trò.<br>
-                Dù mai này có đi đâu xa, chúng em vẫn mãi tự hào là học trò của thầy cô!<br><br>
-                ❤️ Chúc thầy cô luôn mạnh khỏe, hạnh phúc và mãi giữ được ngọn lửa nhiệt huyết ❤️<br><br>
-                — Toàn thể học sinh lớp HK24 —
-            </p>
-
-            <!-- Nhạc
+       
